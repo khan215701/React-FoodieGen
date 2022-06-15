@@ -1,8 +1,8 @@
 import CartIcon from "../Cart/CartIcon";
 import styled from './HeaderCart.module.css'
-const HeaderCart = () => {
+const HeaderCart = props => {
     return (
-        <button className={styled.button}>
+        <button className={styled.button} onClick={props.onClick}>
         <span className={styled.icon}>
             <CartIcon />
         </span>
